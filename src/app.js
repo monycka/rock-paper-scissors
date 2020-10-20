@@ -13,3 +13,25 @@ function computerPlay() {
 
 let playerScore = 0;
 let computerScore = 0;
+
+function results(playerSelection, computerSelection) {
+  if ((playerSelection === "rock") && (computerSelection === "scissors")) {
+      playerScore++;
+      return `You won! ${playerSelection} beats ${computerSelection}`;
+  }
+  else if ((playerSelection === "paper") && (computerSelection === "rock")) {
+      playerScore++;
+      return `You won! ${playerSelection} beats ${computerSelection}`;
+  }
+  else if ((playerSelection === "scissors") && (computerSelection === "paper")) {
+      playerScore++;
+      return `You won! ${playerSelection} beats ${computerSelection}`;
+  }
+  else if (computerSelection === playerSelection) {
+      return `It's a tie!`;
+  }
+  else {
+      computerScore++;
+      return `You lost! ${computerSelection} beats ${playerSelection}`;
+  }
+}
