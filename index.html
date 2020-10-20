@@ -5,24 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rock paper scissors game</title>
 </head>
+<script src="src/app.js"></script>
 <body>
   <script>
-    function computerPlay() {
-    let randomNumber = Math.floor(Math.random() * 3) + 1;
-    if (randomNumber === 1) {
-        return "rock";
-    }
-    else if (randomNumber === 2) {
-        return "paper";
-    }
-    else if (randomNumber === 3) {
-        return "scissors"
-    }
-}
-
-let playerScore = 0;
-let computerScore = 0;
-
+    
 function outcome(playerSelection, computerSelection) {
     if ((playerSelection === "rock") && (computerSelection === "scissors")) {
         playerScore++;
