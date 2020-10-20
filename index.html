@@ -5,39 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rock paper scissors game</title>
 </head>
-<script src="src/app.js"></script>
 <body>
-  <script>
-    
-
-function game(selection) {
-    if ((selection !== "rock") && (selection !== "paper") && (selection !== "scissors")) {
-        console.log("You entered the wrong thing!\nYou need to choose from rock, paper or scissors");
-        return;
-    }
-    else {
-        return outcome(selection, computerPlay());
-    }
-}
-
-let i = 0;
-
-while (i < 5) {
-    let result = prompt("Choose rock, paper or scissors!");
-    result = result.toLowerCase();
-    console.log(game(result));
-    console.log(`Player score : ${playerScore}  Computer score : ${computerScore}`);
-    i++;
-}
-if (playerScore > computerScore) {
-    console.log("YOU ARE THE WINNER! CONGRATS");
-}
-else if(playerScore < computerScore){
-    console.log("Computer wins");
-}
-else {
-    console.log("It's a draw!");
-}
-  </script>
+  <h1>Rock paper scissors game</h1>
+  <p>Play in the console</p>
 </body>
+<script src="src/app.js"></script>
 </html>
