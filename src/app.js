@@ -48,17 +48,17 @@ function game(selection) {
 let i = 0;
 
 while (i < 5) {
-    let result = prompt("Choose rock, paper or scissors!");
+    let result = prompt("Type rock, paper or scissors!");
     result = result.toLowerCase();
     console.log(game(result));
-    console.log(`Player score : ${playerScore}  Computer score : ${computerScore}`);
+    console.log(`Player score : ${playerScore} & Computer score : ${computerScore}`);
     i++;
 }
 if (playerScore > computerScore) {
-    console.log("YOU ARE THE WINNER! CONGRATS");
+    console.log("YOU ARE THE WINNER! 😄");
 }
 else if(playerScore < computerScore){
-    console.log("Computer wins");
+    console.log("The computer won!");
 }
 else {
     console.log("It's a draw!");
